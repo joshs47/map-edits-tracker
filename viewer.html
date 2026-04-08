@@ -36,7 +36,7 @@
     crossorigin=""
   ></script>
   <script>
-    const STORAGE_KEY = "map-pin-dropper-pins";
+    // const STORAGE_KEY = "map-pin-dropper-pins";
 
     const redMarkerIcon = L.icon({
       iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
@@ -82,33 +82,22 @@
       );
     }
 
-    function loadPins() {
-      const savedPins = localStorage.getItem(STORAGE_KEY);
+function loadPins() {
+  fetch('pins.json')
+    .then(res => res.json())
+    .then(pins => {
+      pins.forEach(pin => {
+        if (!isValidPin(pin)) return;
 
-      if (!savedPins) {
-        return;
-      }
-
-      try {
-        const parsedPins = JSON.parse(savedPins);
-
-        if (!Array.isArray(parsedPins)) {
-          return;
-        }
-
-        parsedPins.forEach((pin) => {
-          if (!isValidPin(pin)) {
-            return;
-          }
-
-          L.marker([pin.lat, pin.lng], {
-            icon: getMarkerIcon(pin)
-          }).addTo(map);
-        });
-      } catch (error) {
-        console.error("Unable to load saved pins:", error);
-      }
-    }
+        L.marker([pin.lat, pin.lng], {
+          icon: getMarkerIcon(pin)
+        }).addTo(map);
+      });
+    })
+    .catch(err => {
+      console.error("Error loading pins.json:", err);
+    });
+}
 
     loadPins();
   </script>
