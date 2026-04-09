@@ -53,6 +53,30 @@
       font-weight: 700;
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
     }
+
+    .leaflet-popup-content-wrapper {
+      padding: 0;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+    }
+
+    .leaflet-popup-content {
+      margin: 0;
+    }
+
+    .leaflet-popup-tip {
+      background: #ffffff;
+    }
+
+    .leaflet-container a.leaflet-popup-close-button {
+      top: 10px;
+      right: 12px;
+      width: 28px;
+      height: 28px;
+      color: #6b7280;
+      font-size: 34px;
+      line-height: 24px;
+    }
   </style>
 </head>
 <body>
@@ -119,11 +143,25 @@
       const googleMapsUrl = `https://www.google.com/maps?q=${pin.lat},${pin.lng}`;
 
       return `
-        <div>
-          <p><strong>${country}</strong></p>
-          <p>Lat: ${lat}</p>
-          <p>Lng: ${lng}</p>
-          <p><a href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></p>
+        <div style="width: 390px; padding: 22px 24px 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #2d3748; background: #ffffff; border-radius: 24px;">
+          <p style="margin: 0 0 18px; font-size: 29px; line-height: 1.28; color: #2d3748;">
+            <strong style="font-weight: 800;">Latitude:</strong> ${lat}
+          </p>
+          <p style="margin: 0 0 18px; font-size: 29px; line-height: 1.28; color: #2d3748;">
+            <strong style="font-weight: 800;">Longitude:</strong> ${lng}
+          </p>
+          <p style="margin: 0 0 28px; font-size: 29px; line-height: 1.28; color: #2d3748;">
+            <strong style="font-weight: 800;">Country:</strong> ${country}
+          </p>
+          <a
+            href="${googleMapsUrl}"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 18px 20px; border-radius: 20px; background: #3f63dd; color: #ffffff; text-decoration: none; font-size: 24px; font-weight: 800; line-height: 1.2; box-sizing: border-box;"
+          >
+            <span style="font-size: 28px; line-height: 1;">🌍</span>
+            <span>Open in Google Maps</span>
+          </a>
         </div>
       `;
     }
@@ -151,7 +189,10 @@
           acceptedPins.forEach((pin) => {
             const marker = L.marker([pin.lat, pin.lng], {
               icon: greenMarkerIcon
-            }).bindPopup(createPopupContent(pin));
+            }).bindPopup(createPopupContent(pin), {
+              maxWidth: 430,
+              className: "accepted-pin-popup"
+            });
 
             clusterGroup.addLayer(marker);
           });
