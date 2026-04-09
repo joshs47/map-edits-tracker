@@ -840,6 +840,36 @@
     "status": "accepted"
   },
   {
+    "id": "61397ea8-232b-4ac1-b8a2-8a07727dda80",
+    "lat": 38.90116665794341,
+    "lng": 32.3343167583832,
+    "dateAdded": 1774580310244,
+    "lastChecked": 1775750444987,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "ff8ec378-9df8-4cbe-97ce-25bf6607b2b0",
+    "lat": 37.34664959400187,
+    "lng": 35.94455755667812,
+    "dateAdded": 1774580310525,
+    "lastChecked": 1775750455771,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "95f9c4c0-92dd-4ba9-b2f0-f4f505dda1c2",
+    "lat": 36.86541043731013,
+    "lng": 36.95362857955387,
+    "dateAdded": 1774580310707,
+    "lastChecked": 1775750516170,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
     "id": "464db283-cd56-40bf-9f98-d9ff67109152",
     "lat": 21.9293240862394,
     "lng": -103.4264877758697,
