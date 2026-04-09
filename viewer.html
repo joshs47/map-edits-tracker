@@ -21,13 +21,34 @@
       overflow: hidden;
     }
 
+    body {
+      position: relative;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
     #map {
       width: 100%;
       height: 100%;
     }
+
+    .pin-counter {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 500;
+      padding: 10px 14px;
+      border: 1px solid #d8e1ec;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #1f2937;
+      font-size: 0.95rem;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+    }
   </style>
 </head>
 <body>
+  <div id="acceptedPinsCounter" class="pin-counter">Accepted Pins: 0</div>
   <div id="map"></div>
 
   <script
@@ -36,16 +57,7 @@
     crossorigin=""
   ></script>
   <script>
-    // const STORAGE_KEY = "map-pin-dropper-pins";
-
-    const redMarkerIcon = L.icon({
-      iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
-      shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
+    const acceptedPinsCounter = document.getElementById("acceptedPinsCounter");
 
     const greenMarkerIcon = L.icon({
       iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
@@ -66,10 +78,6 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    function getMarkerIcon(pin) {
-      return pin.status === "accepted" ? greenMarkerIcon : redMarkerIcon;
-    }
-
     function isValidPin(pin) {
       return (
         pin &&
@@ -82,22 +90,43 @@
       );
     }
 
-function loadPins() {
-  fetch('pins.json')
-    .then(res => res.json())
-    .then(pins => {
-      pins.forEach(pin => {
-        if (!isValidPin(pin)) return;
+    function updateAcceptedCounter(count) {
+      acceptedPinsCounter.textContent = `Accepted Pins: ${count}`;
+    }
 
-        L.marker([pin.lat, pin.lng], {
-          icon: getMarkerIcon(pin)
-        }).addTo(map);
-      });
-    })
-    .catch(err => {
-      console.error("Error loading pins.json:", err);
-    });
-}
+    function loadPins() {
+      fetch("pins.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Unable to load pins.json (${response.status})`);
+          }
+
+          return response.text();
+        })
+        .then((text) => {
+          if (!text.trim()) {
+            return [];
+          }
+
+          const parsedPins = JSON.parse(text);
+          return Array.isArray(parsedPins) ? parsedPins : [];
+        })
+        .then((pins) => {
+          const acceptedPins = pins.filter((pin) => isValidPin(pin) && pin.status === "accepted");
+
+          acceptedPins.forEach((pin) => {
+            L.marker([pin.lat, pin.lng], {
+              icon: greenMarkerIcon
+            }).addTo(map);
+          });
+
+          updateAcceptedCounter(acceptedPins.length);
+        })
+        .catch((error) => {
+          console.error("Error loading pins.json:", error);
+          updateAcceptedCounter(0);
+        });
+    }
 
     loadPins();
   </script>
