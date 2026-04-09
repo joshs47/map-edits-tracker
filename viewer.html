@@ -108,6 +108,26 @@
       acceptedPinsCounter.textContent = `Accepted Pins: ${count}`;
     }
 
+    function formatCoordinate(value) {
+      return Number(value).toFixed(4);
+    }
+
+    function createPopupContent(pin) {
+      const country = pin.country || "Unknown";
+      const lat = formatCoordinate(pin.lat);
+      const lng = formatCoordinate(pin.lng);
+      const googleMapsUrl = `https://www.google.com/maps?q=${pin.lat},${pin.lng}`;
+
+      return `
+        <div>
+          <p><strong>${country}</strong></p>
+          <p>Lat: ${lat}</p>
+          <p>Lng: ${lng}</p>
+          <p><a href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></p>
+        </div>
+      `;
+    }
+
     function loadPins() {
       fetch("pins.json")
         .then((response) => {
@@ -131,7 +151,7 @@
           acceptedPins.forEach((pin) => {
             const marker = L.marker([pin.lat, pin.lng], {
               icon: greenMarkerIcon
-            });
+            }).bindPopup(createPopupContent(pin));
 
             clusterGroup.addLayer(marker);
           });
