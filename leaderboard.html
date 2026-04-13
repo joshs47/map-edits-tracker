@@ -25,7 +25,9 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      min-height: 100%;
+      height: auto;
+      min-height: 0;
+      overflow: visible;
       background: linear-gradient(180deg, #f4f8fc 0%, #eef3f8 100%);
     }
 
@@ -36,11 +38,13 @@
     }
 
     .page-shell {
-      min-height: 100vh;
+      height: auto;
+      min-height: 0;
+      overflow: visible;
       padding: 48px 20px;
       box-sizing: border-box;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
     }
 
@@ -230,7 +234,8 @@
           }
 
           return left[0].localeCompare(right[0]);
-        });
+        })
+        .slice(0, 10);
 
       totalAcceptedPins.textContent = String(acceptedPins.length);
       if (leaderboard.length === 0) {
