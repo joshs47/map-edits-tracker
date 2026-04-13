@@ -1360,6 +1360,16 @@
     "status": "accepted"
   },
   {
+    "id": "e2004a58-496c-47bd-8b36-0bc2b0f4b910",
+    "lat": 17.2806245040903,
+    "lng": -96.62380824333646,
+    "dateAdded": 1774654094740,
+    "lastChecked": 1775969395782,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "status": "accepted"
+  },
+  {
     "id": "4d014118-61d9-494c-95a1-e5ce22c061d3",
     "lat": 17.28162097291861,
     "lng": -96.6246431051061,
@@ -1385,6 +1395,16 @@
     "lng": -96.62482554267399,
     "dateAdded": 1774654095923,
     "lastChecked": 1775969371015,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "status": "accepted"
+  },
+  {
+    "id": "373594aa-8082-40cf-b8dd-cd27f9e5ba66",
+    "lat": 17.281520838980263,
+    "lng": -96.62325693463416,
+    "dateAdded": 1774654096280,
+    "lastChecked": 1776044194495,
     "country": "Mexico",
     "countryCode": "MX",
     "status": "accepted"
@@ -1490,6 +1510,16 @@
     "status": "accepted"
   },
   {
+    "id": "e4f84ec8-0eec-459f-8c2c-1e7a389f2313",
+    "lat": 21.546616654739204,
+    "lng": -103.30665312384845,
+    "dateAdded": 1774842265657,
+    "lastChecked": 1776044244495,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "status": "accepted"
+  },
+  {
     "id": "e1439bd2-7eed-425d-af42-7e24becfd7a6",
     "lat": 21.95742738088842,
     "lng": -102.0795027802293,
@@ -1505,6 +1535,16 @@
     "lng": -102.0863306988687,
     "dateAdded": 1774842266245,
     "lastChecked": null,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "status": "accepted"
+  },
+  {
+    "id": "d941f5af-4491-47a2-8630-c0ec489c9275",
+    "lat": 22.005421057018125,
+    "lng": -102.16442611647747,
+    "dateAdded": 1774842266742,
+    "lastChecked": 1776044283262,
     "country": "Mexico",
     "countryCode": "MX",
     "status": "accepted"
@@ -1920,11 +1960,21 @@
     "status": "accepted"
   },
   {
+    "id": "b5e2910e-7834-491b-af83-a9f61e140355",
+    "lat": -9.156057654403142,
+    "lng": -76.90982841005524,
+    "dateAdded": 1775750566734,
+    "lastChecked": 1776044346129,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
     "id": "6949f647-50d5-42d3-aec3-df790905c227",
     "lat": -9.113110360306898,
     "lng": -76.94572714538528,
     "dateAdded": 1775750567207,
-    "lastChecked": 1775970483794,
+    "lastChecked": 1776044613450,
     "country": "Peru",
     "countryCode": "PE",
     "status": "accepted"
@@ -1944,6 +1994,26 @@
     "lat": -9.115236395735794,
     "lng": -76.94667142911766,
     "dateAdded": 1775750567903,
+    "lastChecked": null,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "07e2ad20-8fa2-4b9d-9b04-7cb17dc17db8",
+    "lat": -9.164528743356472,
+    "lng": -76.95956258092784,
+    "dateAdded": 1775750568275,
+    "lastChecked": 1776044472432,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "b38bce56-9641-4f73-8090-127c2b1dd24a",
+    "lat": -9.169422296752284,
+    "lng": -76.95900873286641,
+    "dateAdded": 1775750568540,
     "lastChecked": null,
     "country": "Peru",
     "countryCode": "PE",
