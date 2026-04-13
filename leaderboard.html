@@ -54,40 +54,6 @@
       box-sizing: border-box;
     }
 
-    .leaderboard-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 28px;
-    }
-
-    .leaderboard-kicker {
-      margin: 0 0 8px;
-      color: #3f63dd;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .leaderboard-title {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1;
-      font-weight: 800;
-      color: #111827;
-    }
-
-    .leaderboard-subtitle {
-      margin: 10px 0 0;
-      color: #6b7280;
-      font-size: 1rem;
-      line-height: 1.6;
-      max-width: 560px;
-    }
-
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -204,14 +170,6 @@
 <body>
   <div class="page-shell">
     <main class="leaderboard-panel">
-      <div class="leaderboard-header">
-        <div>
-          <p class="leaderboard-kicker">Accepted Pins</p>
-          <h1 class="leaderboard-title">Country Leaderboard</h1>
-          <p class="leaderboard-subtitle">A live ranking of accepted map edits by country, generated from the same pin dataset used in the viewer.</p>
-        </div>
-      </div>
-
       <section class="summary-grid" aria-label="Leaderboard summary">
         <article class="summary-card">
           <p class="summary-label">Accepted Pins</p>
