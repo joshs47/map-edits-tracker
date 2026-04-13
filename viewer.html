@@ -74,6 +74,29 @@
       background: #ffffff;
     }
 
+    .leaderboard-link {
+      position: absolute;
+      top: 140px;
+      left: 16px;
+      z-index: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border: 1px solid #d8e1ec;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #1f2937;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+    }
+
+    .leaderboard-link:hover {
+      background: #ffffff;
+    }
+
     .leaflet-popup-content-wrapper {
       padding: 0;
       border-radius: 24px;
@@ -102,6 +125,7 @@
 <body>
   <div id="acceptedPinsCounter" class="pin-counter">Accepted Pins: 0</div>
   <button id="resetZoomButton" class="reset-zoom-button" type="button">Reset Zoom</button>
+  <a class="leaderboard-link" href="leaderboard.html">View Leaderboard</a>
   <div id="map"></div>
 
   <script
@@ -111,6 +135,7 @@
   ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
   <script>
+    const pinsDataUrl = "https://joshs47.github.io/map-edits-tracker/pins.json";
     const acceptedPinsCounter = document.getElementById("acceptedPinsCounter");
     const resetZoomButton = document.getElementById("resetZoomButton");
     const defaultCenter = [20, 0];
@@ -191,10 +216,12 @@
     }
 
     function loadPins() {
-      fetch("pins.json")
+      fetch(pinsDataUrl, {
+        method: "GET"
+      })
         .then((response) => {
           if (!response.ok) {
-            throw new Error(`Unable to load pins.json (${response.status})`);
+            throw new Error(`Unable to load ${pinsDataUrl} (${response.status})`);
           }
 
           return response.text();
@@ -208,6 +235,7 @@
           return Array.isArray(parsedPins) ? parsedPins : [];
         })
         .then((pins) => {
+          console.log("Loaded live pins data for viewer:", pins);
           const acceptedPins = pins.filter((pin) => isValidPin(pin) && pin.status === "accepted");
 
           acceptedPins.forEach((pin) => {
@@ -224,7 +252,7 @@
           updateAcceptedCounter(acceptedPins.length);
         })
         .catch((error) => {
-          console.error("Error loading pins.json:", error);
+          console.error("Error loading live pins data:", error);
           updateAcceptedCounter(0);
         });
     }
