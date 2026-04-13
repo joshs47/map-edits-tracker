@@ -42,7 +42,7 @@
     .pin-counter {
       position: absolute;
       top: 16px;
-      right: 16px;
+      left: 16px;
       z-index: 500;
       padding: 10px 14px;
       border: 1px solid #d8e1ec;
@@ -52,6 +52,26 @@
       font-size: 0.95rem;
       font-weight: 700;
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+    }
+
+    .reset-zoom-button {
+      position: absolute;
+      top: 78px;
+      left: 16px;
+      z-index: 500;
+      padding: 10px 14px;
+      border: 1px solid #d8e1ec;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #1f2937;
+      font-size: 0.95rem;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+      cursor: pointer;
+    }
+
+    .reset-zoom-button:hover {
+      background: #ffffff;
     }
 
     .leaflet-popup-content-wrapper {
@@ -81,6 +101,7 @@
 </head>
 <body>
   <div id="acceptedPinsCounter" class="pin-counter">Accepted Pins: 0</div>
+  <button id="resetZoomButton" class="reset-zoom-button" type="button">Reset Zoom</button>
   <div id="map"></div>
 
   <script
@@ -91,6 +112,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
   <script>
     const acceptedPinsCounter = document.getElementById("acceptedPinsCounter");
+    const resetZoomButton = document.getElementById("resetZoomButton");
+    const defaultCenter = [20, 0];
+    const defaultZoom = 2;
 
     const greenMarkerIcon = L.icon({
       iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
@@ -104,7 +128,7 @@
     const map = L.map("map", {
       zoomControl: true,
       attributionControl: false
-    }).setView([20, 0], 2);
+    }).setView(defaultCenter, defaultZoom);
 
     const clusterGroup = L.markerClusterGroup({
       chunkedLoading: true
@@ -204,6 +228,10 @@
           updateAcceptedCounter(0);
         });
     }
+
+    resetZoomButton.addEventListener("click", () => {
+      map.setView(defaultCenter, defaultZoom);
+    });
 
     loadPins();
   </script>
