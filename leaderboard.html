@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="icon" type="image/png" href="icon128.png">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"
+  >
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background: linear-gradient(180deg, #f4f8fc 0%, #eef3f8 100%);
+    }
+
+    body {
+      position: relative;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #1f2937;
+    }
+
+    .page-shell {
+      min-height: 100vh;
+      padding: 48px 20px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .leaderboard-panel {
+      width: min(100%, 960px);
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid #d8e1ec;
+      border-radius: 32px;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+      padding: 32px;
+      box-sizing: border-box;
+    }
+
+    .leaderboard-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .leaderboard-kicker {
+      margin: 0 0 8px;
+      color: #3f63dd;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .leaderboard-title {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .leaderboard-subtitle {
+      margin: 10px 0 0;
+      color: #6b7280;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 560px;
+    }
+
+    .nav-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border: 1px solid #d8e1ec;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #1f2937;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .nav-button:hover {
+      background: #ffffff;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .summary-card {
+      padding: 20px 22px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid #e1e8f0;
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+      text-align: center;
+    }
+
+    .summary-label {
+      margin: 0 0 8px;
+      color: #6b7280;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .summary-value {
+      margin: 0;
+      color: #111827;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .leaderboard-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .leaderboard-row {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 18px;
+      padding: 18px 20px;
+      border-radius: 24px;
+      border: 1px solid #e1e8f0;
+      background: #ffffff;
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .rank-badge {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #3f63dd 0%, #6282f4 100%);
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 800;
+      box-shadow: 0 14px 26px rgba(63, 99, 221, 0.24);
+    }
+
+    .country-name {
+      margin: 0;
+      color: #111827;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    .edit-count {
+      color: #3f63dd;
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-align: right;
+      min-width: 72px;
+    }
+
+    .empty-state {
+      padding: 34px 24px;
+      border-radius: 24px;
+      border: 1px dashed #c8d4e2;
+      background: rgba(248, 251, 255, 0.86);
+      color: #6b7280;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.7;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        padding: 24px 14px;
+      }
+
+      .leaderboard-panel {
+        padding: 24px 18px;
+        border-radius: 24px;
+      }
+
+      .leaderboard-row {
+        grid-template-columns: 56px minmax(0, 1fr);
+      }
+
+      .edit-count {
+        grid-column: 2;
+        text-align: left;
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <main class="leaderboard-panel">
+      <div class="leaderboard-header">
+        <div>
+          <p class="leaderboard-kicker">Accepted Pins</p>
+          <h1 class="leaderboard-title">Country Leaderboard</h1>
+          <p class="leaderboard-subtitle">A live ranking of accepted map edits by country, generated from the same pin dataset used in the viewer.</p>
+        </div>
+        <a class="nav-button" href="viewer.html">Back to Map</a>
+      </div>
+
+      <section class="summary-grid" aria-label="Leaderboard summary">
+        <article class="summary-card">
+          <p class="summary-label">Accepted Pins</p>
+          <p id="totalAcceptedPins" class="summary-value">0</p>
+        </article>
+      </section>
+
+      <section id="leaderboardList" class="leaderboard-list" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+  <script>
+    const pinsDataUrl = "https://joshs47.github.io/map-edits-tracker/pins.json";
+    const leaderboardList = document.getElementById("leaderboardList");
+    const totalAcceptedPins = document.getElementById("totalAcceptedPins");
+
+    function isValidPin(pin) {
+      return (
+        pin &&
+        typeof pin.lat === "number" &&
+        typeof pin.lng === "number" &&
+        pin.lat >= -90 &&
+        pin.lat <= 90 &&
+        pin.lng >= -180 &&
+        pin.lng <= 180
+      );
+    }
+
+    function normalizeCountryName(country) {
+      if (typeof country !== "string" || !country.trim()) {
+        return "Unknown";
+      }
+
+      return country.trim();
+    }
+
+    function renderEmptyState(message) {
+      leaderboardList.innerHTML = `<div class="empty-state">${message}</div>`;
+    }
+
+    function renderLeaderboard(acceptedPins) {
+      const countsByCountry = acceptedPins.reduce((accumulator, pin) => {
+        const country = normalizeCountryName(pin.country);
+        accumulator[country] = (accumulator[country] || 0) + 1;
+        return accumulator;
+      }, {});
+
+      const leaderboard = Object.entries(countsByCountry)
+        .sort((left, right) => {
+          if (right[1] !== left[1]) {
+            return right[1] - left[1];
+          }
+
+          return left[0].localeCompare(right[0]);
+        });
+
+      totalAcceptedPins.textContent = String(acceptedPins.length);
+      if (leaderboard.length === 0) {
+        renderEmptyState("No accepted pins are available yet. Once entries are added to <strong>pins.json</strong>, the top countries will appear here automatically.");
+        return;
+      }
+
+      leaderboardList.innerHTML = leaderboard
+        .map(([country, count], index) => `
+          <article class="leaderboard-row">
+            <div class="rank-badge">#${index + 1}</div>
+            <div>
+              <p class="country-name">${country}</p>
+            </div>
+            <div class="edit-count">${count}</div>
+          </article>
+        `)
+        .join("");
+    }
+
+    function loadPins() {
+      fetch(pinsDataUrl, {
+        method: "GET"
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Unable to load ${pinsDataUrl} (${response.status})`);
+          }
+
+          return response.text();
+        })
+        .then((text) => {
+          if (!text.trim()) {
+            return [];
+          }
+
+          const parsedPins = JSON.parse(text);
+          return Array.isArray(parsedPins) ? parsedPins : [];
+        })
+        .then((pins) => {
+          console.log("Loaded live pins data for leaderboard:", pins);
+          const countedPins = pins.filter((pin) => {
+            if (!isValidPin(pin)) {
+              return false;
+            }
+
+            if (typeof pin.status !== "string" || !pin.status.trim()) {
+              return true;
+            }
+
+            return pin.status.toLowerCase() === "accepted";
+          });
+
+          renderLeaderboard(countedPins);
+        })
+        .catch((error) => {
+          console.error("Error loading live pins data:", error);
+          renderEmptyState("The leaderboard could not load the current pin data. Check that the live GitHub Pages dataset is available and try again.");
+        });
+    }
+
+    loadPins();
+  </script>
+</body>
+</html>
