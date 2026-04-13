@@ -28,13 +28,13 @@
       height: auto;
       min-height: 0;
       overflow: visible;
-      background: linear-gradient(180deg, #f4f8fc 0%, #eef3f8 100%);
+      background: linear-gradient(180deg, #0b1626 0%, #0f1b2d 100%);
     }
 
     body {
       position: relative;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: #1f2937;
+      color: #f3f7ff;
     }
 
     .page-shell {
@@ -50,10 +50,11 @@
 
     .leaderboard-panel {
       width: min(100%, 960px);
-      background: rgba(255, 255, 255, 0.96);
-      border: 1px solid #d8e1ec;
+      background: rgba(22, 38, 61, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 32px;
-      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 24px 60px rgba(2, 8, 23, 0.4);
+      backdrop-filter: blur(12px);
       padding: 32px;
       box-sizing: border-box;
     }
@@ -68,15 +69,15 @@
     .summary-card {
       padding: 20px 22px;
       border-radius: 24px;
-      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-      border: 1px solid #e1e8f0;
-      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+      background: linear-gradient(180deg, rgba(22, 38, 61, 0.96) 0%, rgba(19, 33, 53, 0.96) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 16px 30px rgba(2, 8, 23, 0.28);
       text-align: center;
     }
 
     .summary-label {
       margin: 0 0 8px;
-      color: #6b7280;
+      color: #9bb0cb;
       font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.08em;
@@ -85,7 +86,7 @@
 
     .summary-value {
       margin: 0;
-      color: #111827;
+      color: #f8fbff;
       font-size: 2rem;
       font-weight: 800;
       line-height: 1;
@@ -103,9 +104,9 @@
       gap: 18px;
       padding: 18px 20px;
       border-radius: 24px;
-      border: 1px solid #e1e8f0;
-      background: #ffffff;
-      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(22, 38, 61, 0.92);
+      box-shadow: 0 16px 30px rgba(2, 8, 23, 0.22);
     }
 
     .rank-badge {
@@ -124,13 +125,13 @@
 
     .country-name {
       margin: 0;
-      color: #111827;
+      color: #f8fbff;
       font-size: 1.1rem;
       font-weight: 800;
     }
 
     .edit-count {
-      color: #3f63dd;
+      color: #7ea2ff;
       font-size: 1.8rem;
       font-weight: 800;
       text-align: right;
@@ -140,9 +141,9 @@
     .empty-state {
       padding: 34px 24px;
       border-radius: 24px;
-      border: 1px dashed #c8d4e2;
-      background: rgba(248, 251, 255, 0.86);
-      color: #6b7280;
+      border: 1px dashed rgba(255, 255, 255, 0.12);
+      background: rgba(22, 38, 61, 0.82);
+      color: #b6c6de;
       text-align: center;
       font-size: 1rem;
       line-height: 1.7;
