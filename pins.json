@@ -2018,5 +2018,285 @@
     "country": "Peru",
     "countryCode": "PE",
     "status": "accepted"
+  },
+  {
+    "id": "3478f9a5-0ed3-44c7-87cc-2aea4d0768fe",
+    "lat": 36.86026647440717,
+    "lng": 36.960429876745515,
+    "dateAdded": 1775750568807,
+    "lastChecked": 1776184899558,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "a86274c5-0902-43cf-868d-f9967026d973",
+    "lat": -11.998848834228733,
+    "lng": -41.41712068161061,
+    "dateAdded": 1776031005726,
+    "lastChecked": 1776184965309,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "05a9f403-89ae-4f8c-b0e6-500ceae1be56",
+    "lat": -12.044620126296202,
+    "lng": -41.405236145724864,
+    "dateAdded": 1776031006151,
+    "lastChecked": 1776184982693,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "8ecef98f-03b2-42b9-8ead-9e43fd1d4ada",
+    "lat": -12.768906227695293,
+    "lng": -40.831319596020116,
+    "dateAdded": 1776031008925,
+    "lastChecked": 1776185047626,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "9009193a-9f89-4212-9118-84122d9e7166",
+    "lat": -12.714368144467235,
+    "lng": -40.57999008566685,
+    "dateAdded": 1776031009366,
+    "lastChecked": 1776185057910,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "7be417c8-0196-4137-a263-e092f6975880",
+    "lat": -12.705169912962157,
+    "lng": -40.57898768427672,
+    "dateAdded": 1776031010079,
+    "lastChecked": 1776185096260,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "fce48349-8ccb-4a60-9d77-ec09d81c38fb",
+    "lat": -12.719349113288413,
+    "lng": -40.581632317478395,
+    "dateAdded": 1776031010260,
+    "lastChecked": 1776185065859,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "af9c1768-242c-43f4-a81b-55e3a2fea335",
+    "lat": -12.721280917612857,
+    "lng": -40.579904666719116,
+    "dateAdded": 1776031010626,
+    "lastChecked": null,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "c563fc03-e80e-4efb-bf05-b3c656f30771",
+    "lat": -12.972559958411491,
+    "lng": -40.17539904164673,
+    "dateAdded": 1776031010975,
+    "lastChecked": 1776185120026,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "6aa34d40-6e18-4ae4-9d93-f98ea6c0cb25",
+    "lat": -16.750678920723278,
+    "lng": -51.504410346456204,
+    "dateAdded": 1776031118824,
+    "lastChecked": 1776185135544,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "09242cd3-924c-42e6-bcb5-9ba8e50f5f90",
+    "lat": -11.830975263177532,
+    "lng": -41.13035701577416,
+    "dateAdded": 1776031896204,
+    "lastChecked": 1776185176710,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "2908d25b-82a4-45f4-b505-90d3cdf57b49",
+    "lat": -11.837900126366675,
+    "lng": -41.127324064868176,
+    "dateAdded": 1776031896438,
+    "lastChecked": 1776185156476,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "1c0dcd5f-4eb6-41c5-8c82-610922fb38a9",
+    "lat": -11.871633229187431,
+    "lng": -41.11314454963127,
+    "dateAdded": 1776031897140,
+    "lastChecked": 1776185209077,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "89092019-9da2-4ee2-ac92-d52707af93c9",
+    "lat": -11.875221001839883,
+    "lng": -41.126227919671805,
+    "dateAdded": 1776031897494,
+    "lastChecked": 1776185189660,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "26ded494-dfbf-43d4-860c-80c022a9c73e",
+    "lat": -11.888152775602565,
+    "lng": -41.12964872105176,
+    "dateAdded": 1776031897824,
+    "lastChecked": 1776185216578,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "0fd800b7-aa54-4bcc-a356-f9d1bac09180",
+    "lat": -13.662042685153612,
+    "lng": -39.341462735735945,
+    "dateAdded": 1776031898144,
+    "lastChecked": 1776185245646,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "a06870d7-16ab-4ce1-ba1c-07631e0ebec1",
+    "lat": -13.658583872860191,
+    "lng": -39.3449009604634,
+    "dateAdded": 1776031898495,
+    "lastChecked": 1776185254777,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "e130d50f-5f98-4542-a742-d255b521ed4d",
+    "lat": -13.653342092793917,
+    "lng": -39.36050602080212,
+    "dateAdded": 1776031898671,
+    "lastChecked": 1776185270561,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "e2e2ff41-8250-435b-8df9-ba7e5fb71fa6",
+    "lat": -13.645963680125533,
+    "lng": -39.34130740587826,
+    "dateAdded": 1776031898891,
+    "lastChecked": 1776185262828,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "01648f64-4ba9-4d12-97c6-7c8ddf333665",
+    "lat": 39.02138923305447,
+    "lng": 39.46064259954664,
+    "dateAdded": 1776031899399,
+    "lastChecked": 1776185336962,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "bf6b729a-0cef-4752-85d0-ab2c8a800fd4",
+    "lat": 39.17016184717121,
+    "lng": 39.30103598252815,
+    "dateAdded": 1776032153909,
+    "lastChecked": 1776185357944,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "d4256bde-8aed-47ab-ab84-de5ae158cf3e",
+    "lat": 39.17180158865424,
+    "lng": 39.30524283445224,
+    "dateAdded": 1776032154290,
+    "lastChecked": 1776185372178,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "5aef3611-50cb-4bb4-8c60-5f70bbbc23ba",
+    "lat": 39.170083740728494,
+    "lng": 39.29734456926431,
+    "dateAdded": 1776032154658,
+    "lastChecked": 1776185365661,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "b18fdbd4-30a2-45aa-991e-f8f14147616b",
+    "lat": 39.16989300442623,
+    "lng": 39.290956734715046,
+    "dateAdded": 1776032154858,
+    "lastChecked": 1776185403461,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "c1c59943-64e7-446f-88f0-4e035dee086c",
+    "lat": 39.16866273460565,
+    "lng": 39.2881115847186,
+    "dateAdded": 1776032155242,
+    "lastChecked": null,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "ba3cdc90-eec6-46e2-89d3-a4e6f9f88483",
+    "lat": 39.15874013036632,
+    "lng": 39.278053346146855,
+    "dateAdded": 1776032155595,
+    "lastChecked": 1776185413445,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "6f24310d-2492-4485-b11f-f30b361f4788",
+    "lat": 39.15868887613087,
+    "lng": 39.26803476035421,
+    "dateAdded": 1776032155951,
+    "lastChecked": 1776185421728,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "d7c8f93d-62fa-47ee-8dc7-a0d34bbf0dd5",
+    "lat": 39.11223900783949,
+    "lng": 39.18855489783754,
+    "dateAdded": 1776032344596,
+    "lastChecked": 1776185443395,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
   }
 ]
