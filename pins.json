@@ -2120,6 +2120,16 @@
     "status": "accepted"
   },
   {
+    "id": "49454b6b-5529-48e0-8848-5a618010381e",
+    "lat": -16.478988371819273,
+    "lng": -50.426733220240635,
+    "dateAdded": 1776031119232,
+    "lastChecked": 1776252533985,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
     "id": "09242cd3-924c-42e6-bcb5-9ba8e50f5f90",
     "lat": -11.830975263177532,
     "lng": -41.13035701577416,
@@ -2135,6 +2145,16 @@
     "lng": -41.127324064868176,
     "dateAdded": 1776031896438,
     "lastChecked": 1776185156476,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "status": "accepted"
+  },
+  {
+    "id": "76aed68b-1973-440d-94c1-d8a54e0b1476",
+    "lat": -11.850512259314238,
+    "lng": -41.118957148260854,
+    "dateAdded": 1776031896806,
+    "lastChecked": 1776255420659,
     "country": "Brazil",
     "countryCode": "BR",
     "status": "accepted"
@@ -2290,6 +2310,26 @@
     "status": "accepted"
   },
   {
+    "id": "8586fd87-6747-4735-9b06-c84656f15720",
+    "lat": 39.10927069038232,
+    "lng": 39.20098688338253,
+    "dateAdded": 1776032343862,
+    "lastChecked": 1776252620434,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "66f270ee-8b72-4ecb-a6d2-0e17a865e919",
+    "lat": 39.10901042821247,
+    "lng": 39.19637252419003,
+    "dateAdded": 1776032344218,
+    "lastChecked": 1776252612383,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
     "id": "d7c8f93d-62fa-47ee-8dc7-a0d34bbf0dd5",
     "lat": 39.11223900783949,
     "lng": 39.18855489783754,
@@ -2297,6 +2337,206 @@
     "lastChecked": 1776185443395,
     "country": "Turkey",
     "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "8d47084a-1f07-4a04-a6dd-a61f03c9f958",
+    "lat": 39.133652704477925,
+    "lng": 39.13168760388471,
+    "dateAdded": 1776032344992,
+    "lastChecked": 1776252549935,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "e67070d9-3536-4d0d-8f07-8a4925cc5a5e",
+    "lat": 39.130073278554576,
+    "lng": 39.1222832350639,
+    "dateAdded": 1776032345203,
+    "lastChecked": null,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "cec11ce4-d224-4ad7-a5c6-af9fd385cfb5",
+    "lat": 39.134280420669334,
+    "lng": 39.11870401352654,
+    "dateAdded": 1776032345548,
+    "lastChecked": 1776252561302,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "577125a2-81e3-4b16-bdbd-5fa658bf031c",
+    "lat": 39.135606447079695,
+    "lng": 39.11305023962671,
+    "dateAdded": 1776032345897,
+    "lastChecked": null,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "6bc2cdad-9267-47c1-833e-9e45adeb0eb9",
+    "lat": 39.083250214273704,
+    "lng": 39.140031699864956,
+    "dateAdded": 1776032346092,
+    "lastChecked": 1776252579685,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "eb2873f0-0c0f-4c6b-b1a0-2e50f65c55ec",
+    "lat": 39.051402101307595,
+    "lng": 39.12578191799031,
+    "dateAdded": 1776032346652,
+    "lastChecked": 1776254635986,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "964edc64-f15a-4915-a5b8-a52ec302a36b",
+    "lat": 39.05557191231741,
+    "lng": 39.114084604505,
+    "dateAdded": 1776032347056,
+    "lastChecked": 1776252655504,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "status": "accepted"
+  },
+  {
+    "id": "5c339c9b-397a-4429-bb8e-3e9fdb973a89",
+    "lat": 20.443163991792268,
+    "lng": 57.007522695095375,
+    "dateAdded": 1776032469686,
+    "lastChecked": 1776252640317,
+    "country": "Oman",
+    "countryCode": "OM",
+    "status": "accepted"
+  },
+  {
+    "id": "841dec27-629b-4651-89ec-82b2c5b4556c",
+    "lat": -9.152162018202255,
+    "lng": -76.9062146394567,
+    "dateAdded": 1776044583700,
+    "lastChecked": 1776258335759,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "22b5b3f9-b119-474e-9254-c7217987890c",
+    "lat": -9.15033326078632,
+    "lng": -76.90463550758264,
+    "dateAdded": 1776044584075,
+    "lastChecked": null,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "6b3a4b2e-0ff1-47f3-8b97-9a880b56d37f",
+    "lat": -9.152605738049113,
+    "lng": -76.90260296497749,
+    "dateAdded": 1776044584474,
+    "lastChecked": null,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "e1e579ac-d52b-4442-87e5-0c5d8d39977d",
+    "lat": -9.150052339394959,
+    "lng": -76.9029020176736,
+    "dateAdded": 1776044584944,
+    "lastChecked": 1776088245664,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "8230bff1-59c3-4209-9b1e-20f8b5e1ed13",
+    "lat": -9.168336015011453,
+    "lng": -76.95813874485796,
+    "dateAdded": 1776044585310,
+    "lastChecked": 1776258364626,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "cfa6a3b3-821b-4df8-93fa-a3b85e3b77a6",
+    "lat": -9.17199925884562,
+    "lng": -76.95570796973557,
+    "dateAdded": 1776044585709,
+    "lastChecked": null,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "07e50afa-e98c-4eef-a388-191a11cd2f6c",
+    "lat": -9.174210357056126,
+    "lng": -76.95534400648599,
+    "dateAdded": 1776044586098,
+    "lastChecked": null,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "a7e2aa95-57de-471f-b6c0-f7a61e789e6c",
+    "lat": -9.177160872353893,
+    "lng": -76.95641750128001,
+    "dateAdded": 1776044586355,
+    "lastChecked": null,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "da48aa4a-07f3-4c23-b393-4e739484dce0",
+    "lat": -9.179509280276617,
+    "lng": -76.95708397100161,
+    "dateAdded": 1776044586722,
+    "lastChecked": null,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "6d53cdfc-64fe-4185-9fde-0c6694a41d96",
+    "lat": -9.184406211907731,
+    "lng": -76.94788554001889,
+    "dateAdded": 1776044587130,
+    "lastChecked": 1776047478266,
+    "country": "Peru",
+    "countryCode": "PE",
+    "status": "accepted"
+  },
+  {
+    "id": "bcffa06c-91bb-422d-8d30-4566078d4cd8",
+    "lat": 22.398125974833608,
+    "lng": 57.430825551976376,
+    "dateAdded": 1776044704437,
+    "lastChecked": 1776258425258,
+    "country": "Oman",
+    "countryCode": "OM",
+    "status": "accepted"
+  },
+  {
+    "id": "8941e589-296c-408e-ba5c-880017f989fd",
+    "lat": -9.02688839209202,
+    "lng": -76.9587592695308,
+    "dateAdded": 1776099917737,
+    "lastChecked": 1776258394560,
+    "country": "Peru",
+    "countryCode": "PE",
     "status": "accepted"
   }
 ]
