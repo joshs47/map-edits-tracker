@@ -2660,6 +2660,56 @@
     "status": "accepted"
   },
   {
+    "id": "9ce57d8f-8964-44f9-8d44-a5f487ab5454",
+    "lat": 6.324946399440179,
+    "lng": 19.079998007572513,
+    "dateAdded": 1776259012608,
+    "lastChecked": 1777037661271,
+    "country": "Central African Republic",
+    "countryCode": "CF",
+    "status": "accepted"
+  },
+  {
+    "id": "e285d195-6f6e-45d9-9782-fe8080e4db18",
+    "lat": 6.323650771566809,
+    "lng": 19.08109313423517,
+    "dateAdded": 1776259013034,
+    "lastChecked": null,
+    "country": "Central African Republic",
+    "countryCode": "CF",
+    "status": "accepted"
+  },
+  {
+    "id": "597a61f3-9b95-466d-8040-3067491e42e3",
+    "lat": 6.324640927974971,
+    "lng": 19.08276287028214,
+    "dateAdded": 1776259013529,
+    "lastChecked": null,
+    "country": "Central African Republic",
+    "countryCode": "CF",
+    "status": "accepted"
+  },
+  {
+    "id": "6d13bd94-bdfd-4fa7-a37b-f255090c57be",
+    "lat": 6.321891516666361,
+    "lng": 19.08134805248238,
+    "dateAdded": 1776259014069,
+    "lastChecked": 1777037668155,
+    "country": "Central African Republic",
+    "countryCode": "CF",
+    "status": "accepted"
+  },
+  {
+    "id": "f11ed86e-50d9-4448-857c-d6a5c7ade316",
+    "lat": 6.326462550098426,
+    "lng": 19.07964122292074,
+    "dateAdded": 1776259014249,
+    "lastChecked": null,
+    "country": "Central African Republic",
+    "countryCode": "CF",
+    "status": "accepted"
+  },
+  {
     "id": "548cdd7a-a3f8-4160-b323-986bb5b97287",
     "lat": -12.354790869497066,
     "lng": -76.23448239081338,
@@ -2830,6 +2880,36 @@
     "status": "accepted"
   },
   {
+    "id": "5fae7c83-1043-4d91-8bef-4c524266664b",
+    "lat": 28.38313648472376,
+    "lng": 83.47798501208639,
+    "dateAdded": 1776262149820,
+    "lastChecked": 1777037795389,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "fe1136ac-f6fe-4d19-9985-c5521f257c73",
+    "lat": 28.382567102741344,
+    "lng": 83.4640653000615,
+    "dateAdded": 1776262150720,
+    "lastChecked": 1777037868272,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "b4bc7e5f-cf5e-4a76-86f9-99c5ce4ca937",
+    "lat": 28.38351319145096,
+    "lng": 83.46256060115904,
+    "dateAdded": 1776262150940,
+    "lastChecked": 1777037887489,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
     "id": "93e0e1ab-f2fe-4fd1-ac29-f6dd72a9041c",
     "lat": 28.388928102404066,
     "lng": 83.45056784183377,
@@ -2850,6 +2930,46 @@
     "status": "accepted"
   },
   {
+    "id": "b7fd2098-464a-4667-802d-d36a0e0f20d6",
+    "lat": 28.389012310914463,
+    "lng": 83.44707472402803,
+    "dateAdded": 1776262152340,
+    "lastChecked": 1777037940573,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "816b1dfe-b8b1-4ba6-9312-4edb8ef4c24b",
+    "lat": 28.389682128273275,
+    "lng": 83.44674791196366,
+    "dateAdded": 1776262152576,
+    "lastChecked": 1777037924057,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "39d37ac4-20f3-4494-a68d-f8c3550ffd40",
+    "lat": 28.394705507605654,
+    "lng": 83.43613768811544,
+    "dateAdded": 1776262153203,
+    "lastChecked": 1777038013205,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "bc2bd13d-6ea0-46da-82ca-672ae9df9d02",
+    "lat": 28.39870624496455,
+    "lng": 83.42332250737067,
+    "dateAdded": 1776262153599,
+    "lastChecked": 1777038047323,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
     "id": "8b622ebb-121c-4d51-b315-2dc9033cd7fd",
     "lat": 28.39749589572143,
     "lng": 83.42706369390477,
@@ -2865,6 +2985,346 @@
     "lng": 83.41663588129558,
     "dateAdded": 1776262154289,
     "lastChecked": 1776998698089,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "8f365509-2ea2-4ee8-8393-b8c098f50b37",
+    "lat": 28.400122628098064,
+    "lng": 83.41933397015175,
+    "dateAdded": 1776262154683,
+    "lastChecked": 1777038203773,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "42298151-dba9-491a-be74-3b681446f0aa",
+    "lat": 28.39458639586698,
+    "lng": 83.42176869757017,
+    "dateAdded": 1776262166635,
+    "lastChecked": 1777038244324,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "c435a786-ebf3-407c-a808-775f57fb6e81",
+    "lat": 28.395386630229446,
+    "lng": 83.41710630622151,
+    "dateAdded": 1776262246808,
+    "lastChecked": null,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "dca8a327-bf94-4838-8214-7b92f9576543",
+    "lat": 28.394426553349327,
+    "lng": 83.41971336012982,
+    "dateAdded": 1776262250652,
+    "lastChecked": 1777038233875,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "913d3ac1-531c-45ee-983c-3c5a29c93e71",
+    "lat": 28.395457407497716,
+    "lng": 83.4163609416438,
+    "dateAdded": 1776262256668,
+    "lastChecked": 1777038250973,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "a8803340-7be8-4c9f-8ae2-803d5c1fe723",
+    "lat": 28.402032069250684,
+    "lng": 83.41111978688107,
+    "dateAdded": 1776262260665,
+    "lastChecked": null,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "38d8e39d-55e5-44fe-b6fd-b7a931c49d8c",
+    "lat": 28.40257413426258,
+    "lng": 83.41026042881343,
+    "dateAdded": 1776262264645,
+    "lastChecked": 1777038270656,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "075585b1-572b-4b0f-abd0-9d1f1616c4bd",
+    "lat": 29.235541283533234,
+    "lng": 81.23934949021964,
+    "dateAdded": 1776276281485,
+    "lastChecked": 1777038510408,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "878d60e2-4eeb-4433-8b33-5b7a70dec116",
+    "lat": 29.234359183518357,
+    "lng": 81.24628150482684,
+    "dateAdded": 1776276282635,
+    "lastChecked": 1777038630841,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "b48878d5-39b2-4e19-90f5-4c887ae70808",
+    "lat": 29.23466263559373,
+    "lng": 81.24092280342563,
+    "dateAdded": 1776276283106,
+    "lastChecked": 1777038347307,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "b1c258c4-16ce-4659-b58b-f4cd5d73fa37",
+    "lat": 29.234494003286045,
+    "lng": 81.24159608249887,
+    "dateAdded": 1776276283325,
+    "lastChecked": 1777038331308,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "7651bff7-adc7-491d-98fd-c71aaf113b25",
+    "lat": 29.234092684927603,
+    "lng": 81.24158421693183,
+    "dateAdded": 1776276283621,
+    "lastChecked": 1777038374590,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "c8b55b13-391c-40e8-b602-c0494ba119b7",
+    "lat": 29.234251884170085,
+    "lng": 81.24082341117828,
+    "dateAdded": 1776276284028,
+    "lastChecked": 1777038370174,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "b9923530-c485-402f-985b-fcc543d4af9f",
+    "lat": 29.233714583380767,
+    "lng": 81.24156666567961,
+    "dateAdded": 1776276284550,
+    "lastChecked": 1777038379257,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "755b9d57-53a4-4470-8b41-6e5ac7d0c3fc",
+    "lat": 29.233214855543665,
+    "lng": 81.24119395594678,
+    "dateAdded": 1776276285048,
+    "lastChecked": 1777038386525,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "172a2d0f-dc1a-48ab-a470-b57a9b7fd452",
+    "lat": 29.233442667452135,
+    "lng": 81.23968759530499,
+    "dateAdded": 1776276285282,
+    "lastChecked": 1777038556726,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "82a66034-0ec2-4dc6-8a26-6a9d5167d39c",
+    "lat": 29.23279779779698,
+    "lng": 81.2406879055685,
+    "dateAdded": 1776276285779,
+    "lastChecked": 1777038565409,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "d19e488b-57c1-4018-8423-54fe2b8ec197",
+    "lat": 29.227998630385596,
+    "lng": 81.2391963289955,
+    "dateAdded": 1776276286279,
+    "lastChecked": null,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "8178fd0d-4b89-4cbf-ac68-c26e64a7dbef",
+    "lat": 29.239033287296966,
+    "lng": 81.25755093612138,
+    "dateAdded": 1776276286899,
+    "lastChecked": 1777038669175,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "e96c2857-107d-489e-b0f7-b112c3c5b47c",
+    "lat": 29.23234238787293,
+    "lng": 81.24145781907848,
+    "dateAdded": 1776276390252,
+    "lastChecked": 1777038569858,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "0ee2a0b7-01a9-4b35-8446-7d7a59ed648a",
+    "lat": 29.23127884265639,
+    "lng": 81.24089137643927,
+    "dateAdded": 1776276390687,
+    "lastChecked": 1777038577225,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "86d978ad-fbec-4cfb-a4b6-f25f7f13c2dc",
+    "lat": 29.22997638491024,
+    "lng": 81.24059914731257,
+    "dateAdded": 1776276391143,
+    "lastChecked": 1777038591124,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "221f886b-531c-45d6-875b-3fc8fe1330bc",
+    "lat": 29.228752602187665,
+    "lng": 81.23990492852562,
+    "dateAdded": 1776276391371,
+    "lastChecked": 1777038598791,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "00bc6149-b811-4a8e-81bf-ababcd58d11a",
+    "lat": 29.22754542956035,
+    "lng": 81.23908617744979,
+    "dateAdded": 1776276391866,
+    "lastChecked": 1777038620042,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "70690d55-e076-4d25-8e4d-321258aa2723",
+    "lat": 29.236634327393972,
+    "lng": 81.24970127874771,
+    "dateAdded": 1776276392326,
+    "lastChecked": 1777038640008,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "ceea868e-d69b-4c59-ae2a-648e44d2af65",
+    "lat": 29.20383373314333,
+    "lng": 81.23456528612965,
+    "dateAdded": 1776276572638,
+    "lastChecked": 1777038846042,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "646df0b7-1c88-499b-a4ca-6294cfc377fb",
+    "lat": 29.20179385375383,
+    "lng": 81.23073695736873,
+    "dateAdded": 1776276573130,
+    "lastChecked": 1777038835544,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "b5504f58-b2d6-488d-8d07-f5b4d47d06a0",
+    "lat": 28.17230291534923,
+    "lng": 83.7460615690162,
+    "dateAdded": 1776343788775,
+    "lastChecked": 1777038958277,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "0849dea7-95ea-4748-8b04-a7e7a0710624",
+    "lat": 28.198928829675484,
+    "lng": 83.72921196344782,
+    "dateAdded": 1776343789201,
+    "lastChecked": 1777038738826,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "55e3fb03-0016-4313-ba6f-55288e2a0c31",
+    "lat": 28.201771536690288,
+    "lng": 83.7215079525644,
+    "dateAdded": 1776343907043,
+    "lastChecked": 1777038734260,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "8d36be49-0110-4eef-9727-91087ee950a4",
+    "lat": 28.202419149795396,
+    "lng": 83.72357356634548,
+    "dateAdded": 1776343907477,
+    "lastChecked": 1777038727259,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "b7330b0e-771a-400b-a37f-e9ac4751010d",
+    "lat": 28.202531293168043,
+    "lng": 83.7071455316783,
+    "dateAdded": 1776343959762,
+    "lastChecked": 1777038714724,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "f7177f47-fea4-4e04-af93-7d7c0664da91",
+    "lat": 28.248450125060405,
+    "lng": 82.72490375253727,
+    "dateAdded": 1776359145286,
+    "lastChecked": 1777038860059,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
+  },
+  {
+    "id": "0dd78134-e2f8-44da-bc31-70327e41b7f5",
+    "lat": 28.286799893326474,
+    "lng": 82.64782431806707,
+    "dateAdded": 1776944031685,
+    "lastChecked": 1777038899243,
     "country": "Nepal",
     "countryCode": "NP",
     "status": "accepted"
