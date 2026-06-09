@@ -157,8 +157,18 @@
       acceptedPinsCounter.textContent = `Accepted Pins: ${count}`;
     }
 
-    function formatCoordinate(value) {
-      return Number(value).toFixed(4);
+    function formatDateAdded(value) {
+      const date = new Date(value);
+
+      if (value === null || value === undefined || Number.isNaN(date.getTime())) {
+        return "N/A";
+      }
+
+      return new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }).format(date);
     }
 
     function escapeHtml(value) {
@@ -172,31 +182,27 @@
         ? escapeHtml(pin.title.trim())
         : "N/A";
       const country = escapeHtml(pin.country || "Unknown");
-      const lat = formatCoordinate(pin.lat);
-      const lng = formatCoordinate(pin.lng);
+      const dateAdded = formatDateAdded(pin.dateAdded);
       const googleMapsUrl = `https://www.google.com/maps?q=${pin.lat},${pin.lng}`;
 
       return `
-        <div style="width: 390px; padding: 22px 24px 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #2d3748; background: #ffffff; border-radius: 24px;">
-          <p style="margin: 0 0 18px; font-size: 29px; line-height: 1.28; color: #2d3748;">
+        <div style="width: 330px; padding: 18px 20px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #2d3748; background: #ffffff; border-radius: 20px;">
+          <p style="margin: 0 0 14px; font-size: 23px; line-height: 1.25; color: #2d3748;">
             <strong style="font-weight: 800;">Project Title:</strong> ${title}
           </p>
-          <p style="margin: 0 0 18px; font-size: 29px; line-height: 1.28; color: #2d3748;">
-            <strong style="font-weight: 800;">Latitude:</strong> ${lat}
-          </p>
-          <p style="margin: 0 0 18px; font-size: 29px; line-height: 1.28; color: #2d3748;">
-            <strong style="font-weight: 800;">Longitude:</strong> ${lng}
-          </p>
-          <p style="margin: 0 0 28px; font-size: 29px; line-height: 1.28; color: #2d3748;">
+          <p style="margin: 0 0 14px; font-size: 23px; line-height: 1.25; color: #2d3748;">
             <strong style="font-weight: 800;">Country:</strong> ${country}
+          </p>
+          <p style="margin: 0 0 20px; font-size: 23px; line-height: 1.25; color: #2d3748;">
+            <strong style="font-weight: 800;">Date Added:</strong> ${dateAdded}
           </p>
           <a
             href="${googleMapsUrl}"
             target="_blank"
             rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 18px 20px; border-radius: 20px; background: #3f63dd; color: #ffffff; text-decoration: none; font-size: 24px; font-weight: 800; line-height: 1.2; box-sizing: border-box;"
+            style="display: flex; align-items: center; justify-content: center; gap: 9px; width: 100%; padding: 14px 16px; border-radius: 16px; background: #3f63dd; color: #ffffff; text-decoration: none; font-size: 20px; font-weight: 800; line-height: 1.2; box-sizing: border-box;"
           >
-            <span style="font-size: 28px; line-height: 1;">🌍</span>
+            <span style="font-size: 23px; line-height: 1;">🌍</span>
             <span>Open in Google Maps</span>
           </a>
         </div>
@@ -230,7 +236,7 @@
             const marker = L.marker([pin.lat, pin.lng], {
               icon: greenMarkerIcon
             }).bindPopup(createPopupContent(pin), {
-              maxWidth: 430,
+              maxWidth: 370,
               className: "accepted-pin-popup"
             });
 
