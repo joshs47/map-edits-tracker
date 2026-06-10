@@ -9,5 +9,16 @@
     "country": "Nepal",
     "countryCode": "NP",
     "status": "accepted"
+  },
+  {
+    "id": "7e381262-2b8f-48fe-b211-196852aadfe8",
+    "title": "Area around Dukhu Gau, Nepal",
+    "lat": 28.398318016444975,
+    "lng": 83.41730704965349,
+    "dateAdded": 1781133666066,
+    "lastChecked": null,
+    "country": "Nepal",
+    "countryCode": "NP",
+    "status": "accepted"
   }
 ]
