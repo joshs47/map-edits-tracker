@@ -100,7 +100,7 @@
   </style>
 </head>
 <body>
-  <div id="acceptedPinsCounter" class="pin-counter">Accepted Pins: 0</div>
+  <div id="acceptedPinsCounter" class="pin-counter">Total Completed Projects: 0</div>
   <button id="resetZoomButton" class="reset-zoom-button" type="button">Reset Zoom</button>
   <div id="map"></div>
 
@@ -154,7 +154,7 @@
     }
 
     function updateAcceptedCounter(count) {
-      acceptedPinsCounter.textContent = `Accepted Pins: ${count}`;
+      acceptedPinsCounter.textContent = `Total Completed Projects: ${count}`;
     }
 
     function formatDateAdded(value) {
